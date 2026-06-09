@@ -1,2 +1,3 @@
 [tool.vercel]
-entrypoint = "api/news:handler"
+entrypoint = "api/news.py"
+handler = "handler"
