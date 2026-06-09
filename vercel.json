@@ -1,4 +1,6 @@
 {
-  "builds": [{"src":"api/news.py","use":"@vercel/python"}],
-  "routes": [{"src":"/api/news","dest":"/api/news.py"},{"src":"(.*)","dest":"/public/$1"}]
+  "rewrites": [
+    { "source": "/api/news", "destination": "/api/news.py" },
+    { "source": "/(.*)", "destination": "/public/$1" }
+  ]
 }
