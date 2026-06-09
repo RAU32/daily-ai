@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "src": "/api/news", "dest": "/api/news.py" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
+}
